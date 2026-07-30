@@ -1,5 +1,6 @@
 import os
 import logging
+import html
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, ChatJoinRequestHandler, ContextTypes
 
@@ -17,7 +18,7 @@ Moi c'est Agathe ! Installe-toi confortablement dans mon salon... On dit souvent
 Mon salon est parfait pour avoir un aperçu, mais mes vraies discussions intimistes se passent au chaud, dans ma chambre 🗝️✨ 
 Je t'attends sur mon profil privé ➡️ <a href="https://t.me/agathemontclar">@agathemontclar</a> 😊"""
 
-# Remplace l'URL ci-dessous par le lien direct de la photo d'Agathe
+# Lien direct de la photo hébergée sur ton GitHub
 PHOTO_URL = "https://raw.githubusercontent.com/Enzo1509/agathemontclar/main/image1.jpg"
 
 async def handle_join_request(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -38,14 +39,17 @@ async def handle_join_request(update: Update, context: ContextTypes.DEFAULT_TYPE
             [InlineKeyboardButton("💬 M'écrire en privé", url="https://t.me/agathemontclar")]
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
-        text = WELCOME_TEXT.format(name=user.first_name or "à toi")
+        
+        # Sécurisation du prénom pour éviter les crashs de formatage
+        safe_name = html.escape(user.first_name or "à toi")
+        text = WELCOME_TEXT.format(name=safe_name)
 
         await context.bot.send_photo(
             chat_id=user.id,
             photo=PHOTO_URL,
             caption=text,
             parse_mode="HTML",
-            reply_markup=reply_markup
+            reply_markup=reply_amorph := reply_markup
         )
         logging.info(f"DM privé envoyé avec succès à {user.first_name} ({user.id})")
     except Exception as e:
