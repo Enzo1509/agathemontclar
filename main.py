@@ -18,7 +18,7 @@ Mon salon est parfait pour avoir un aperçu, mais mes vraies discussions intimis
 Je t'attends sur mon profil privé ➡️ <a href="https://t.me/agathemontclar">@agathemontclar</a> 😊"""
 
 # Remplace l'URL ci-dessous par le lien direct de la photo d'Agathe
-PHOTO_URL = "https://i.postimg.cc/XJPBjtp7/Image-30-07-2026-at-18-10.jpg"
+PHOTO_URL = "https://raw.githubusercontent.com/Enzo1509/agathemontclar/main/image1.jpg"
 
 async def handle_join_request(update: Update, context: ContextTypes.DEFAULT_TYPE):
     request = update.chat_join_request
