@@ -1,5 +1,6 @@
 import os
 import logging
+import html
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, ChatJoinRequestHandler, ContextTypes
 
@@ -38,7 +39,10 @@ async def handle_join_request(update: Update, context: ContextTypes.DEFAULT_TYPE
             [InlineKeyboardButton("💬 M'écrire en privé", url="https://t.me/agathemontclar")]
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
-        text = WELCOME_TEXT.format(name=user.first_name or "à toi")
+        
+        # Sécurisation du prénom pour éviter les crashs HTML de Telegram
+        safe_name = html.escape(user.first_name or "à toi")
+        text = WELCOME_TEXT.format(name=safe_name)
 
         await context.bot.send_photo(
             chat_id=user.id,
