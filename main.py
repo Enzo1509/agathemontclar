@@ -15,10 +15,10 @@ WELCOME_TEXT = """Coucou {name} 🧡
 
 Moi c'est Agathe ! Installe-toi confortablement dans mon salon... On dit souvent que les rousses qui ont la trentaine ont du caractère... et tu as bien fait d'être curieux 😏
 Mon salon est parfait pour avoir un aperçu, mais mes vraies discussions intimistes se passent au chaud, dans ma chambre 🗝️✨ 
-Je t'attends sur mon profil privé ➡️ @agathemontclar 😊"""
+Je t'attends sur mon profil privé ➡️ <a href="https://t.me/agathemontclar">@agathemontclar</a> 😊"""
 
 # Remplace l'URL ci-dessous par le lien direct de la photo d'Agathe
-PHOTO_URL = "https://postimg.cc/wyhjFfXS"
+PHOTO_URL = "https://i.imgur.com/votre_photo.jpg"
 
 async def handle_join_request(update: Update, context: ContextTypes.DEFAULT_TYPE):
     request = update.chat_join_request
@@ -44,6 +44,7 @@ async def handle_join_request(update: Update, context: ContextTypes.DEFAULT_TYPE
             chat_id=user.id,
             photo=PHOTO_URL,
             caption=text,
+            parse_mode="HTML",
             reply_markup=reply_markup
         )
         logging.info(f"DM privé envoyé avec succès à {user.first_name} ({user.id})")
