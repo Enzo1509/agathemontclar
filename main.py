@@ -49,7 +49,7 @@ async def handle_join_request(update: Update, context: ContextTypes.DEFAULT_TYPE
             photo=PHOTO_URL,
             caption=text,
             parse_mode="HTML",
-            reply_markup=reply_amorph := reply_markup
+            reply_markup=reply_markup
         )
         logging.info(f"DM privé envoyé avec succès à {user.first_name} ({user.id})")
     except Exception as e:
