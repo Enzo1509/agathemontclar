@@ -12,11 +12,14 @@ logging.basicConfig(
 
 TOKEN = os.environ.get("TELEGRAM_TOKEN")
 
-WELCOME_TEXT = """Coucou {name} 🧡
+WELCOME_TEXT = """Ravie de te voir ici 🧡
 
-Moi c'est Agathe ! Installe-toi confortablement dans mon salon... On dit souvent que les rousses qui ont la trentaine ont du caractère... et tu as bien fait d'être curieux 😏
-Mon salon est parfait pour avoir un aperçu, mais mes vraies discussions intimistes se passent au chaud, dans ma chambre 🗝️✨ 
-Viens me parler... je ne mords pas 🤭⬇️ <a href="https://t.me/agathemontclar">@agathemontclar</a> """
+Je vois que tu as trouvé le chemin jusqu'à moi.... j'aime les personnes qui savent chercher 😏
+
+La suite t'attend juste ici 👇
+<a href="https://t.me/+Xswz7MmcBbk0YmI0">https://t.me/+Xswz7MmcBbk0YmI0</a>
+
+Et crois-moi... je remarque toujours ceux qui osent faire le premier pas 🧡"""
 
 # Lien direct de la photo hébergée sur ton GitHub
 PHOTO_URL = "https://raw.githubusercontent.com/Enzo1509/agathemontclar/main/image1.jpg"
