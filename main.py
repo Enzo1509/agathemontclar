@@ -17,7 +17,7 @@ WELCOME_TEXT = """Ravie de te voir ici 🧡
 Je vois que tu as trouvé le chemin jusqu'à moi.... j'aime les personnes qui savent chercher 😏
 
 La suite t'attend juste ici 👇
-<a href="https://t.me/+Xswz7MmcBbk0YmI0">https://t.me/+Xswz7MmcBbk0YmI0</a>
+<a href="https://t.me/+GQU8e1-khxZmMzg0</a>
 
 Et crois-moi... je remarque toujours ceux qui osent faire le premier pas 🧡"""
 
