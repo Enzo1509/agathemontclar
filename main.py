@@ -16,7 +16,7 @@ WELCOME_TEXT = """Ravie de te voir ici 🧡
 
 Je vois que tu as trouvé le chemin jusqu'à moi.... j'aime les personnes qui savent chercher 😏
 
-La suite t'attend juste ici 👇 dans mon canal public
+La suite t'attend juste ici dans mon canal public 👇🏻
 https://t.me/+oChCXHJBoYVlYzBk
 
 Et crois-moi... je remarque toujours ceux qui osent faire le premier pas 🧡"""
