@@ -14,12 +14,19 @@ TOKEN = os.environ.get("TELEGRAM_TOKEN")
 
 WELCOME_TEXT = """Ravie de te voir ici 🧡
 
-Je vois que tu as trouvé le chemin jusqu'à moi.... j'aime les personnes qui savent chercher 😏
+Tu as trouvé le chemin jusqu'à moi...
 
-La suite t'attend juste ici dans mon canal public 👇🏻
+Ici, c'est juste un aperçu. Ce que je choisis de te laisser voir.
+
+Mais j'aime bien savoir qui est assez curieux pour aller un peu plus loin.
+
+Reste un peu. Regarde.
+
+Et si tu as envie d'en découvrir davantage... tu sais déjà où ça se passe 🧡
+
+Je te laisse commencer par mon canal public 🫦
 https://t.me/+oChCXHJBoYVlYzBk
-
-Et crois-moi... je remarque toujours ceux qui osent faire le premier pas 🧡"""
+"""
 
 # Lien direct de la photo hébergée sur ton GitHub
 PHOTO_URL = "https://raw.githubusercontent.com/Enzo1509/agathemontclar/main/image1.jpg"
