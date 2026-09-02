@@ -25,7 +25,7 @@ Reste un peu. Regarde.
 Et si tu as envie d'en découvrir davantage... tu sais déjà où ça se passe 🧡
 
 Je te laisse commencer par mon canal public 🫦
-https://t.me/+oChCXHJBoYVlYzBk
+https://t.me/+enHVtdnHs8hkNzFk
 """
 
 # Lien direct de la photo hébergée sur ton GitHub
